@@ -25,6 +25,10 @@ export class CountriesService {
     ]);
 
     return {
+      country: {
+        name: countryName,
+        countryCode: code,
+      },
       borders: countryInfo.borders,
       populationData,
       flag,
